@@ -4,7 +4,7 @@
 #
 # SHELL command: `curl https://getpeer.tube | sh`
 #
-# Source: https://github.com/kimsible/getpeer.tube
+# Source: https://github.com/dearsarkar/getpeer.tube
 
 {
 #################
@@ -13,15 +13,15 @@
 
 # Default branch
 if [ ! "$GIT_BRANCH" ]; then
-  GIT_BRANCH="master"
+  GIT_BRANCH="dev"
 fi
 
 # Peertube: https raw url of docker production PeerTube setup
-PEERTUBE_DOCKER_RAW_URL=https://raw.githubusercontent.com/kimsible/getpeer.tube/$GIT_BRANCH
+PEERTUBE_DOCKER_RAW_URL=https://raw.githubusercontent.com/dearsarkar/getpeer.tube/$GIT_BRANCH
 
 # Docker: needs version matching with v3.3 Compose file format
 # https://docs.docker.com/compose/compose-file/compose-versioning/
-DOCKER_PREREQUISITE_RELEASE=17.06.01
+DOCKER_PREREQUISITE_RELEASE=25.0.4
 
 # Docker Compose binary path
 COMPOSE=/usr/local/bin/docker-compose
